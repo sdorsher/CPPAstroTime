@@ -1,0 +1,19 @@
+Under UNIX, compile TimeChart and AstronomicalTime to produce
+AstronomicalChart, an executable, with the command
+
+g++ -lm TimeChart.cpp AstronomicalTime.cpp -o AstronomicalChart
+
+Run astronomical chart by typing ./AstronomicalChart
+
+AstronomicalChart allows the input of three possible astronomical
+variable objects, V471 Tauri, FF Aquarii, and Algol, all eclipsing
+binary star systems. It also takes the input of the observer's
+lattitutde in hours and lattitude in degrees. Using this input and
+ephemerii taken from literature quoted in the text of the code,
+AstronomicalChart produces a table of local times and dates, universal
+times and dates, Heliocentric Julain Dates, Siderial times, precessed
+right acensions and declinations, the corresponding azimuth and
+altitude, approximate air mass, hour angle, and phase of the variable
+object. These hourly updates are displayed for the nighttime hours of
+each day for the time interval selected by the user, assuming night is
+from 7pm to 5am. This chart is output to the text file timeChart.txt.
